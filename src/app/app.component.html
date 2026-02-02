@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg main-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <i class="bi bi-building me-2"></i>
+      Gestel 2026
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="clientesDropdown" role="button" data-bs-toggle="dropdown">
+            <i class="bi bi-people me-1"></i>
+            Clientes
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/clientes" routerLinkActive="active">
+              <i class="bi bi-list-ul me-2"></i>Listado de Clientes
+            </a></li>
+            <li><a class="dropdown-item" routerLink="/clientes-stats">
+              <i class="bi bi-bar-chart-line me-2"></i>Estadísticas de Clientes
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="/edificios" routerLinkActive="active">
+              <i class="bi bi-building me-2"></i>Edificios
+            </a></li>
+            <li><a class="dropdown-item" routerLink="/edificios-stats">
+              <i class="bi bi-bar-chart me-2"></i>Estadísticas de Edificios
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" routerLink="/enlaces" routerLinkActive="active">
+              <i class="bi bi-link-45deg me-2"></i>Enlaces
+            </a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="tablasAdminDropdown" role="button" data-bs-toggle="dropdown">
+            <i class="bi bi-database me-1"></i>
+            Tablas Administrativas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/provincias" routerLinkActive="active">
+              <i class="bi bi-geo-alt me-2"></i>Provincias
+            </a></li>
+            <li><a class="dropdown-item" routerLink="/provincias-stats" routerLinkActive="active">
+              <i class="bi bi-bar-chart-line me-2"></i>Estadísticas de Provincias
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="bg-light text-center py-3 mt-5">
+  <div class="container">
+    <small class="text-muted">
+      © 2026 Gestel - Sistema de Gestión de Traps de Telecomunicaciones
+    </small>
+  </div>
+</footer>
